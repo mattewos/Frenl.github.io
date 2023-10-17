@@ -1,0 +1,303 @@
+<!-- <h1>report</h1> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="Admin_Dashboard.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Freanel Daycare</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <a href="../index.html" id="logoutBtn" style="position: fixed; top: 10px; right: 10px; padding: 10px;">Logout</a>
+  </body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const logoutBtn = document.getElementById('logoutBtn');
+    
+        logoutBtn.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          // Redirect to index.html
+          window.location.href = '../index.html';
+        });
+      });
+    </script>
+       
+
+       
+         
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link " href="Admin_Dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="Admin_users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li><!-- End Profile Page Nav -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="Admin_portfolio.html">
+      <i class="bi bi-question-circle"></i>
+      <span>Portfolio Image</span>
+    </a>
+  </li><!-- End F.A.Q Page Nav -->
+
+ 
+  
+
+
+
+  
+
+</ul>
+
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Portfolio Image</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Portfolio Image</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section faq">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="card basic">
+            <div class="card-body">
+              <h5 class="card-title">Change Portfolio Image</h5>
+
+             
+              <section class="portfolio">
+                <div class="container">
+          
+                  <style>
+                    
+                  </style>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageNature1" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Nature</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputNature1" >
+                  <!-- <label for="photoFileInputNature1" style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;">Select Photo for Nature</label> -->
+
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageNature1', 'photoFileInputNature1')">Upload Photo for Nature</button>
+
+                  
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageTeaching1" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Teaching</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputTeaching1">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;"onclick="handlePhoto('portfolioImageTeaching1', 'photoFileInputTeaching1')">Upload Photo for Teaching</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageNature2" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Nature</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputNature2">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;"onclick="handlePhoto('portfolioImageNature2', 'photoFileInputNature2')">Upload Photo for Nature 2</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageSocial1" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Social</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputSocial1">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageSocial1', 'photoFileInputSocial1')">Upload Photo for Social</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageTeaching2" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>teaching</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputTeaching2">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageTeaching2', 'photoFileInputTeaching2')">Upload Photo for Teaching 2</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageNature3" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Nature</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputNature3">
+                  <button  style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageNature3', 'photoFileInputNature3')">Upload Photo for Nature 3</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageSocial2" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Social</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputSocial2">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageSocial2', 'photoFileInputSocial2')">Upload Photo for social2</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageSocial3" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Social</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputSocial3">
+                  <button  style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageSocial3', 'photoFileInputSocial3')">Upload Photo for Social3</button>
+          
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                      <div class="portfolio-item">
+                        <img id="portfolioImageTeaching3" src="" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h3>Teaching</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <input type="file" accept="image/*" id="photoFileInputTeaching3">
+                  <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #68A4C4; color: white; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;" onclick="handlePhoto('portfolioImageTeaching3', 'photoFileInputTeaching3')">Upload Photo for Teaching 3</button>
+                  </div>
+          
+                </div>
+       
+
+            </div>
+          </div>
+
+         
+  <footer id="footer" class="footer">
+    
+    <div class="copyright">
+     <center> &copy; Copyright <strong><span>Freanel Daycare</span></strong>. All Rights Reserved</center>
+    </div>
+   
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="../uploadphoto.js"></script>
+
+</body>
+
+</html>
