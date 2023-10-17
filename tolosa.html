@@ -1,0 +1,104 @@
+<div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+      <div class="portfolio-item">
+        <img id="portfolioImage" src="" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h3>Nature</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="file" accept="image/*" id="photoFileInput">
+  <button onclick="handlePhoto()">Upload Photo</button>
+
+  <script>
+    // Load the image source from local storage on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedImageSrc = localStorage.getItem('portfolioImageSrc');
+      if (savedImageSrc) {
+        const portfolioImage = document.getElementById('portfolioImage');
+        portfolioImage.src = savedImageSrc;
+      }
+    });
+
+    function handlePhoto() {
+      const fileInput = document.getElementById('photoFileInput');
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        const img = new Image();
+        img.src = e.target.result;
+
+        // Find the portfolio-item element and update its image
+        const portfolioImage = document.getElementById('portfolioImage');
+        portfolioImage.src = img.src;
+
+        // Save the image source to local storage
+        localStorage.setItem('portfolioImageSrc', img.src);
+      };
+
+      // Modify the upload location here if needed
+      const uploadLocation = ''; // Change this if needed
+      const filename = file.name;
+
+      // Log the upload location and filename for demonstration purposes
+      console.log('File will be uploaded to:', uploadLocation + filename);
+
+      reader.readAsDataURL(file);
+    }
+  </script>
+  <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+      <div class="portfolio-item">
+        <img id="portfoliImage" src="" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h3>Teaching</h3> <!-- Changed "Nature" to "Teaching" -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="file" accept="image/*" id="photFileInput">
+  <button onclick="handlePhoto()">Upload Photo</button>
+
+  <script>
+    // Load the image source from local storage on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedImageSrc = localStorage.getItem('portfoliImageSrc');
+      if (savedImageSrc) {
+        const portfolioImage = document.getElementById('portfoliImage');
+        portfolioImage.src = savedImageSrc;
+      }
+    });
+
+    function handlePhoto() {
+      const fileInput = document.getElementById('photFileInput');
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        const img = new Image();
+        img.src = e.target.result;
+
+        // Find the portfolio-item element and update its image
+        const portfolioImage = document.getElementById('portfoliImage');
+        portfolioImage.src = img.src;
+
+        // Save the image source to local storage
+        localStorage.setItem('portfoliImageSrc', img.src);
+      };
+
+      // Modify the upload location here if needed
+      const uploadLocation = ''; // Change this if needed
+      const filename = file.name;
+
+      // Log the upload location and filename for demonstration purposes
+      console.log('File will be uploaded to:', uploadLocation + filename);
+
+      reader.readAsDataURL(file);
+    }
+  </script>

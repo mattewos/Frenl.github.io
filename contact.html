@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Freanle DayCare</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="photo/logo.jpg" rel="icon">
+  <link href="photo/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="photo/logo.jpg" alt="Freanel Daycare Logo" style="max-width: 50px; margin-right: 10px; border-radius: 50%;">
+            <h1 class="text-light" style="font-size: 28px; font-family: 'Arial', sans-serif; margin: 0;">
+                <span style=" padding: 5px 10px; border-radius: 5px;">Freanel Daycare</span>
+            </h1>
+        </a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        
+        
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Login Pop-up</title>
+          <style>
+            /* Styling for the login button */
+            .get-started-btn {
+              padding: 10px;
+            }
+        
+            /* Styling for the login box */
+            #loginBox {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: #f8f8f8;
+              padding: 20px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              max-width: 300px;
+              text-align: center;
+              animation-name: fadeUp;
+              animation-duration: 0.5s;
+              animation-timing-function: ease-out;
+            }
+        
+            @keyframes fadeUp {
+              from {
+                transform: translate(-50%, -55%);
+                opacity: 0;
+              }
+              to {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+              }
+            }
+        
+            #loginBox h2 {
+              margin-bottom: 20px;
+            }
+        
+            #loginBox label {
+              display: block;
+              margin-bottom: 8px;
+              text-align: left;
+            }
+        
+            #loginBox input[type="text"],
+            #loginBox input[type="password"] {
+              width: 100%;
+              padding: 8px;
+              border-radius: 4px;
+              border: 1px solid #ccc;
+              margin-bottom: 16px;
+            }
+        
+            #loginBox button[type="submit"] {
+              width: 100%;
+              padding: 10px;
+              border-radius: 4px;
+              background-color: #0036ac;
+              color: #fff;
+              border: none;
+            }
+          </style>
+         <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loginBtn = document.getElementById('loginBtn');
+        const loginBox = document.getElementById('loginBox');
+    
+        loginBtn.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          // Toggle the visibility of the login box
+          if (loginBox.style.display === 'none' || loginBox.style.display === '') {
+            loginBox.style.display = 'block';
+            loginBox.classList.add('fadeUp');
+          } else {
+            loginBox.style.display = 'none';
+            loginBox.classList.remove('fadeUp');
+          }
+        });
+    
+        // Add event listener for the form submission
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+    
+          // Check if the entered username and password are correct
+          if (username === 'Mattewos' && password === 'Matipassword') {
+            // Redirect to another page
+            window.location.href = 'Admin Page/Admin_Dashboard.html';
+          } else {
+            alert('Invalid username or password. Please try again.');
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#" id="loginBtn" class="get-started-btn">Login</a>
+    <div id="loginBox">
+      <form id="loginForm">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  </html>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Contact</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Contact</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>Ethiopia, Addis Ababa, Woreda 10</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>FreanelDaycare@gmail.com<br>Freanel@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+251 911 686 069<br> +251 911 686 069</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Map Section ======= -->
+    <!-- <section class="map mt-2">
+      <div class="container-fluid p-0">
+        <iframe src="https://www.google.com/maps/place/9%C2%B000'33.7%22N+38%C2%B051'41.8%22E/@9.0096323,38.8609445,18.71z/data=!4m4!3m3!8m2!3d9.0093678!4d38.8616098?entry=ttu" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </section> -->
+    <!-- End Map Section -->
+    <section class="map mt-2">
+      <div class="container-fluid p-0">
+        <a href="https://www.google.com/maps/place/9%C2%B000'33.7%22N+38%C2%B051'41.8%22E/@9.0093678,38.8590349,17z/data=!3m1!4b1!4m4!3m3!8m2!3d9.0093678!4d38.8616098?entry=ttu"><img src="photo/Map.png" alt="Map not found" style="width: 1200px; height: 500px; object-fit: cover;" ></a>
+      </div>
+    </section>
+    <br><br>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Engaging Learning Experiences</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Social-Emotional Support</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Early Childhood Education</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Social Development and Peer Interaction</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Outdoor Exploration</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+             Wereda 10 <br>
+              Addis Ababa<br>
+              Ethiopia <br><br>
+              <strong>Phone:</strong> +251 911 686 069<br>
+              <strong>Email:</strong> FrenaelDaycare@gmail.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Freanle Daycare</h3>
+            <p>
+              Freanel Daycare provides a safe and nurturing environment where children receive professional supervision, engaging educational activities, opportunities for social interaction, a structured routine, and valuable support for both parents and children's growth.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Freanel Daycare</span></strong>. All Rights Reserved
+      </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
